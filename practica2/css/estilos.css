@@ -58,6 +58,7 @@ p {
 
 #text p {
   background-color: #0F5F5C;
+ width: 90%;            /* ancho 90% */
     
 }
 
@@ -115,11 +116,4 @@ p {
 #image {}
 
 @media all and (max-width: 500px) {
-  img {
-    border: 5px solid red; /* borde rojo */
-    width: 90%;            /* ancho 90% */
-    display: block;        /* para poder centrar */
-    margin: 0 auto;        /* centrado horizontal */
-    float: none;           /* elimina el float */
-  }
 }
