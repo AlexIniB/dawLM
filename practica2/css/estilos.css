@@ -4,13 +4,15 @@
 
 body {
   font-family: Arial;
-
+    background-color: #3FA66B;
 }
 
 h1 {
   /* 1. El título superior tiene una línea de 5px negra */
   border-bottom: 5px solid black;
   margin-bottom: 20px;
+  text-align: center;
+  background-color: #220878;
 }
 
 img {
@@ -45,6 +47,7 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
   margin-bottom: 15px;
+
 }
 
 #header {}
@@ -53,14 +56,16 @@ p {
 
 #text {}
 
-#text p {}
+#text p {
+  background-color: #0F5F5C;
+    
+}
 
 #text p:first-child {
   /* 4. Primer párrafo: esquinas superiores redondeadas + fondo repetido */
   border-radius: 30px 30px 0 0;
   background: url("/practica2/images/fondoParrafo.png") repeat;
   /* 12. Fondo repetido */
-
 }
 
 #text p:last-child {
