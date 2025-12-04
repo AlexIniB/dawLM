@@ -66,7 +66,7 @@ p {
   /* 4. Primer párrafo: esquinas superiores redondeadas + fondo repetido */
   border-radius: 30px 30px 0 0;
   /* 12. Fondo repetido */
-  background: url("/practica2/images/fondoParrafo.png") repeat;
+  background: url("../images/fondoParrafo.png") repeat;
 }
 
 #text p:last-child {
