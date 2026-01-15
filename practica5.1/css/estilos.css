@@ -1,5 +1,9 @@
 *{
   margin: 0px auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 }
 
 body {
@@ -68,23 +72,15 @@ p {
 }
 
 #menu li a:hover{
-  /*
-  Punto 1: Los enlaces cambian de color de fondo y estan subrayados de color azul
-  */
-  /* necesitas 2 instrucciones*/
-  /*1: */
-  /*2: */
+  background-color: orange;
+  text-decoration: underline;
 }
 
 #footer{
-  /*
-  Punto 6: Barra de pie de pagina siempre estara 
-  */
-  /* necesitas 3 instrucciones*/
-  /*1: */
-  /*2: */
-  /*3: */
-  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
   background-color: #097054;
   text-align: center;
   color: white;
@@ -109,41 +105,23 @@ p {
 
 
 #imageLeft {
- /*
-  Punto 2: La capa de las imagenes debe aparecer a la izquierda de la pantalla
- */
-
-  /* necesitas 1 instruccion*/
-  /*1: */
+  float: left;
   text-align: center;
   padding-bottom: 5px;
 }
 
 #imageRight {
- /*
-  Punto 2: La capa de las imagenes debe aparecer a la derecha de la pantalla
- */
-
-  /* necesitas 1 instruccion*/
-  /*1: */
+  float: right;
   text-align: center;
   padding-bottom: 5px;
 }
 
 #textMain {
-/*
-  Punto 3: Para que la capa de la imagen y el float NO sigan la dinamica de la seccion anterior hay que romperla
- */
-
-  /* necesitas 1 instruccion*/
-  /*1: */
+ clear: both;
 }
 
 #imageToHide {
- /*
-  Punto 3: La capa de las imagenes debe aparecer a la izquierda de la pantalla
- */
-
+  float: left;
   /* necesitas 1 instruccion*/
   /*1: */  
   text-align: center;
@@ -155,15 +133,10 @@ p {
 }
 
 #cookieEU {
- /*
-  Punto 4: La capa esta posicionada casi al centro de la pantalla. Se diferencia del menu y del footer en que NO se queda fija al hacer scroll de la pagina.
- */
-
-  /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
-  /*1: */  
-  /*2: */    
-  /*3: */    
-  /*4: */    
+  position: absolute;
+  top: 150px;
+  left: 25%;
+  right: 25%;  
   border:2px solid red;
   background-color: white;
   margin-bottom: 5px;
@@ -172,13 +145,8 @@ p {
 }
 
 #textOverflow {
- /*
-  Punto 5: La capa tiene una barra de scroll vertical para que podamos leer el texto que no cabe en el tamaño. Solo vertical, no horizontal
- */
-
-  /* necesitas 2 instruccion*/
-  /*1: */  
-  /*2: */  
+  overflow-y: scroll;
+  overflow-x: hidden;
   
   height: 250px;
   text-align: justify;
@@ -259,11 +227,19 @@ p {
  
 }
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 500px) {
   #header {
-    /*
-    Cambio el margen para que no lo tape el menu
-    */
+  #imageLeft {
+    float: none;
+  }
+
+  #imageRight {
+    float: none;
+  }
+
+  #imageToHide {
+    float: none;
+  }
     margin-top: 100px;
   }
 }
