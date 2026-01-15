@@ -226,6 +226,9 @@ p {
 
 @media all and (max-width: 500px) {
   #header {
+    margin-top: 100px;
+  }
+
   #imageLeft {
     float: none;
   }
@@ -236,7 +239,5 @@ p {
 
   #imageToHide {
     float: none;
-  }
-    margin-top: 100px;
   }
 }
