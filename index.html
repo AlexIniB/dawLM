@@ -4,33 +4,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Índice de prácticas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       text-align: center;
-      background-color: #fafafa;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: white;
     }
 
     h1 {
-      color: #2c3e50;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      font-size: 3em;
+      margin-bottom: 50px;
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+    ul {
+      list-style: none;
+      max-width: 500px;
+    }
+
+    li {
+      margin: 20px 0;
+      animation: fadeInUp 0.8s ease-out;
     }
 
     a {
-      color: #0066cc;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 15px 30px;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
     }
-    
+
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      a {
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Índice de prácticas</h1>
+  <h1>📚 Índice de prácticas</h1>
   <ul>
     <li><a href="curriculum.html">Práctica 1 - Curriculum</a></li>
-    <br>
-    <li><a href="5_paginas/index.html">Practica 2 - Intento CSS</a></li>
-    <br>
-    <li><a href="practica2/index.html">Practica 3 - CSS Basico</a></li>
-    <br>
-    <li><a href="practica5.1/index.html">Practica 4 - FLOAT</li>
+    <li><a href="5_paginas/index.html">Práctica 2 - Intento CSS</a></li>
+    <li><a href="practica2/index.html">Práctica 3 - CSS Básico</a></li>
+    <li><a href="practica5.1/index.html">Práctica 4 - FLOAT</a></li>
   </ul>
 </body>
 </html>
