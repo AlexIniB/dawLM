@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Empresa</title>
+    <title>Pedri González</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <!--1. Menú superior -->
-    <header>Mi Empresa</header>
+    <header>Web de Pedri</header>
 
     <!--3. Aviso de cookies -->
     <div id="cookies">
@@ -21,43 +23,55 @@
     <main>
         <div class="info">
             <div class="texto">
-                <h2>Quiénes somos</h2>
-                <p>Somos una empresa dedicada a crear experiencias digitales únicas.</p>
+                <h2>Información</h2>
+                <br>
+                <p>Nombre: Pedro González López</p>
+                <p>F.Nacimiento: 25/11/2002(23)</p>
+                <p>Nacionalidad: Española</p>
+                <p>Altura: 1,74 m</p>
             </div>
             <div class="imagen">
-                <img src="https://picsum.photos/400/250?random=1" alt="Empresa">
+                <img src="/practica5.1B/images/Escudo.png" alt="Escudo FCB">
             </div>
         </div>
 
         <div class="info">
-            <div class="imagen">
-                <img src="https://picsum.photos/400/250?random=2" alt="Equipo">
-            </div>
             <div class="texto">
-                <h2>Nuestro equipo</h2>
-                <p>Contamos con un equipo de profesionales altamente capacitados.</p>
+                <h2>Estadísticas</h2>
+                <br>
+                <p>- 6 goles</p>
+                <p>- 13 asistencias</p>
+                <p>- 6 regates p/p</p>
+                <p>- 96% de pases acertados</p>
+                <br>
+                <p>Visita su pagina en Transfermarkt <a href="https://www.transfermarkt.es/pedri/profil/spieler/683840"
+                        target="_blank">página oficial</a> para más información.</p>
+            </div>
+            <div class="imagen">
+                <img src="/practica5.1B/images/pedri.png" alt="Pedri">
             </div>
         </div>
 
         <!--5. Menú lateral -->
         <aside>
-            <img src="https://picsum.photos/60?random=3" alt="Icono1">
-            <img src="https://picsum.photos/60?random=4" alt="Icono2">
-            <img src="https://picsum.photos/60?random=5" alt="Icono3">
+            <img src="/practica5.1B/images/lYamal.png" alt="Lamine Yamal">
+            <img src="/practica5.1B/images/gavi.png" alt="Gavi">
+            <img src="/practica5.1B/images/cubarsi.png" alt="Cubarsi">
         </aside>
     </main>
 
     <!--6. Pie de página -->
     <footer>
-        <p>© 2026 Mi Empresa | Dirección, Teléfono, Email</p>
+        <p>© 2026 Alejandro Iniesta | Barcelona FC</p>
     </footer>
 
     <script>
         //3. Funcionalidad para ocultar aviso de cookies
-        document.getElementById('aceptarCookies').addEventListener('click', function() {
+        document.getElementById('aceptarCookies').addEventListener('click', function () {
             document.getElementById('cookies').style.display = 'none';
         });
     </script>
 
 </body>
+
 </html>
