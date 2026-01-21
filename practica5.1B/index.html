@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!--1. Menú superior -->
+    <header>Mi Empresa</header>
+
+    <!--3. Aviso de cookies -->
+    <div id="cookies">
+        <p>Usamos cookies para mejorar tu experiencia. ¿Aceptas?</p>
+        <button id="aceptarCookies">Aceptar</button>
+    </div>
+
+    <!--4. Contenido principal -->
+    <main>
+        <div class="info">
+            <div class="texto">
+                <h2>Quiénes somos</h2>
+                <p>Somos una empresa dedicada a crear experiencias digitales únicas.</p>
+            </div>
+            <div class="imagen">
+                <img src="https://picsum.photos/400/250?random=1" alt="Empresa">
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="imagen">
+                <img src="https://picsum.photos/400/250?random=2" alt="Equipo">
+            </div>
+            <div class="texto">
+                <h2>Nuestro equipo</h2>
+                <p>Contamos con un equipo de profesionales altamente capacitados.</p>
+            </div>
+        </div>
+
+        <!--5. Menú lateral -->
+        <aside>
+            <img src="https://picsum.photos/60?random=3" alt="Icono1">
+            <img src="https://picsum.photos/60?random=4" alt="Icono2">
+            <img src="https://picsum.photos/60?random=5" alt="Icono3">
+        </aside>
+    </main>
+
+    <!--6. Pie de página -->
+    <footer>
+        <p>© 2026 Mi Empresa | Dirección, Teléfono, Email</p>
+    </footer>
+
+    <script>
+        //3. Funcionalidad para ocultar aviso de cookies
+        document.getElementById('aceptarCookies').addEventListener('click', function() {
+            document.getElementById('cookies').style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
